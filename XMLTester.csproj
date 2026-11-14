@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>XMLTester</AssemblyName>
+    <RootNamespace>XMLTester</RootNamespace>
+    <ApplicationIcon>xmltester_icon.ico</ApplicationIcon>
+    <!-- Self-contained single-file for Linux: dotnet publish -c Release -r linux-x64 /p:SelfContained=true -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <PublishTrimmed>false</PublishTrimmed>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia"               Version="11.2.3" />
+    <PackageReference Include="Avalonia.Desktop"       Version="11.2.3" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.2.3" />
+  </ItemGroup>
+</Project>
